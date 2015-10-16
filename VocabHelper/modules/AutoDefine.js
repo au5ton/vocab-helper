@@ -41,23 +41,6 @@ $(document).on('VHDictionaryFinishedLoading', function(){
 
     });
 
-    // select the target node
-    var target = document.querySelector('#challengeContainer');
-
-    // create an observer instance
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            console.log(mutation.type);
-            //AutoDefine.setup();
-        });
-    });
-
-    // configuration of the observer:
-    var config = { attributes: true, childList: true, characterData: true };
-
-    // pass in the target node, as well as the observer options
-    observer.observe(target, config);
-
 });
 
 

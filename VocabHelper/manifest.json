@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "Vocab Helper",
+    "version": "1.0",
+
+    "description": "Helps you out on Vocab.com",
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "permissions": [
+    ],
+    "web_accessible_resources": [
+        "lib/dictionary.json"
+    ],
+    "content_scripts" : [{
+        "matches": [
+            "*://vocabulary.com/*",
+            "*://www.vocabulary.com/*"
+        ],
+        "css": [
+            "css/vocab-helper.css"
+        ],
+        "js" : [
+            "lib/jquery-2.1.4.min.js",
+            "modules/Dictionary.js",
+            "modules/AutoDefine.js"
+        ]
+        }]
+    }

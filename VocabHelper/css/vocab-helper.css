@@ -1,0 +1,22 @@
+
+.vocab-helper-message {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.vocab-helper-message h3, .vocab-helper-message h4, .vocab-helper-message h5, .vocab-helper-message p {
+    color: #fff;
+}
+
+.vocab-helper-message h4 {
+    margin: 0;
+    font-size: 1.5em;
+    font-style: italic;
+    border-bottom: #fff solid 2px;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+}
